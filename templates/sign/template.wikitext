@@ -1,0 +1,28 @@
+<div class="sign --{{{tipo|carvalho}}} {{#if:{{{negrito|}}}|--bold}}" style="--color: {{{cor|black}}};"><span>{{{1|}}}</span><span>{{{2|}}}</span><span>{{{3|}}}</span><span>{{{4|}}}</span></div>
+
+<noinclude>
+{{Sign
+|1=Linha 1 da placa
+|2=Essa é a linha 2
+|3=A 3 é essa aqui
+|4=E termina na 4
+|tipo=amarelo
+}}
+{{Sign
+|1=Linha 1 da placa
+|3=A 3 é essa aqui
+|tipo=azul
+|cor=lightskyblue
+}}
+{{Sign
+|2=Essa é a linha 2
+|4=E termina na 4
+|tipo=carvalho-escuro
+|cor=white
+}}
+{{Sign
+|2=Essa é a linha 2
+|3=A 3 é essa aqui
+|negrito=true
+}}
+</noinclude>

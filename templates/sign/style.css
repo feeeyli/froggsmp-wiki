@@ -1,0 +1,51 @@
+.sign {
+  width: 192px;
+  height: 96px;
+  image-rendering: pixelated;
+  background-size: 192px;
+  font-family: Minecraftia;
+  line-height: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 15px;
+  transition: opacity 150ms;
+  color: var(--color);
+}
+
+.sign.--bold {
+  font-weight: 700;
+}
+
+.sign span {
+  min-height: 18px;
+}
+
+.sign.--acacia {background-image: url('https://raw.githubusercontent.com/feeeyli/froggsmp-wiki/main/assets/signs/acacia.png'); }
+.sign.--bambu { background-image: url('https://raw.githubusercontent.com/feeeyli/froggsmp-wiki/main/assets/signs/bamboo.png'); }
+.sign.--betula { background-image: url('https://raw.githubusercontent.com/feeeyli/froggsmp-wiki/main/assets/signs/birch.png'); }
+.sign.--preto { background-image: url('https://raw.githubusercontent.com/feeeyli/froggsmp-wiki/main/assets/signs/black.png'); }
+.sign.--azul { background-image: url('https://raw.githubusercontent.com/feeeyli/froggsmp-wiki/main/assets/signs/blue.png'); }
+.sign.--marrom { background-image: url('https://raw.githubusercontent.com/feeeyli/froggsmp-wiki/main/assets/signs/brown.png'); }
+.sign.--carmesim { background-image: url('https://raw.githubusercontent.com/feeeyli/froggsmp-wiki/main/assets/signs/crimson.png'); }
+.sign.--ciano { background-image: url('https://raw.githubusercontent.com/feeeyli/froggsmp-wiki/main/assets/signs/cyan.png'); }
+.sign.--carvalho-escuro { background-image: url('https://raw.githubusercontent.com/feeeyli/froggsmp-wiki/main/assets/signs/dark_oak.png'); }
+.sign.--cinza { background-image: url('https://raw.githubusercontent.com/feeeyli/froggsmp-wiki/main/assets/signs/gray.png'); }
+.sign.--verde { background-image: url('https://raw.githubusercontent.com/feeeyli/froggsmp-wiki/main/assets/signs/green.png'); }
+.sign.--selva { background-image: url('https://raw.githubusercontent.com/feeeyli/froggsmp-wiki/main/assets/signs/jungle.png'); }
+.sign.--azul-claro { background-image: url('https://raw.githubusercontent.com/feeeyli/froggsmp-wiki/main/assets/signs/light_blue.png'); }
+.sign.--cinza-claro { background-image: url('https://raw.githubusercontent.com/feeeyli/froggsmp-wiki/main/assets/signs/light_gray.png'); }
+.sign.--verde-lima { background-image: url('https://raw.githubusercontent.com/feeeyli/froggsmp-wiki/main/assets/signs/lime.png'); }
+.sign.--magenta { background-image: url('https://raw.githubusercontent.com/feeeyli/froggsmp-wiki/main/assets/signs/magenta.png'); }
+.sign.--mangue { background-image: url('https://raw.githubusercontent.com/feeeyli/froggsmp-wiki/main/assets/signs/mangrove.png'); }
+.sign.--carvalho { background-image: url('https://raw.githubusercontent.com/feeeyli/froggsmp-wiki/main/assets/signs/oak.png'); }
+.sign.--laranja { background-image: url('https://raw.githubusercontent.com/feeeyli/froggsmp-wiki/main/assets/signs/orange.png'); }
+.sign.--rosa { background-image: url('https://raw.githubusercontent.com/feeeyli/froggsmp-wiki/main/assets/signs/pink.png'); }
+.sign.--roxo { background-image: url('https://raw.githubusercontent.com/feeeyli/froggsmp-wiki/main/assets/signs/purple.png'); }
+.sign.--vermelho { background-image: url('https://raw.githubusercontent.com/feeeyli/froggsmp-wiki/main/assets/signs/red.png'); }
+.sign.--pinheiro { background-image: url('https://raw.githubusercontent.com/feeeyli/froggsmp-wiki/main/assets/signs/spruce.png'); }
+.sign.--distorcido { background-image: url('https://raw.githubusercontent.com/feeeyli/froggsmp-wiki/main/assets/signs/warped.png'); }
+.sign.--branco { background-image: url('https://raw.githubusercontent.com/feeeyli/froggsmp-wiki/main/assets/signs/white.png'); }
+.sign.--amarelo { background-image: url('https://raw.githubusercontent.com/feeeyli/froggsmp-wiki/main/assets/signs/yellow.png'); }
