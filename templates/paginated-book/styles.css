@@ -1,0 +1,64 @@
+.paginated-book {
+  background: url('https://i.imgur.com/BFFYO3S.png');
+  height: 360px;
+  width: 292px;
+  background-size: contain;
+  image-rendering: pixelated;
+  position: relative;
+  font-family: Minecraftia;
+  color: black;
+}
+
+.paginated-book__page-indicator {
+  position: absolute;
+  top: 30px;
+  right: 38px;
+  user-select: none;
+  line-height: 14px;
+}
+
+.paginated-book__nav {
+  width: 36px;
+  height: 20px;
+  background-size: contain !important;
+  cursor: pointer;
+  position: absolute;
+  bottom: 24px;
+}
+
+.paginated-book__prev {
+  background: url('https://i.imgur.com/SkbjEJc.png');
+  left: 57px;
+}
+
+.paginated-book__prev:hover {
+  background: url('https://i.imgur.com/brX7TER.png');
+}
+
+.paginated-book__next {
+  background: url('https://i.imgur.com/Q6nluGA.png');
+  right: 67px;
+}
+
+.paginated-book__next:hover {
+  background: url('https://i.imgur.com/byt4Ygz.png');
+}
+
+.page-content p.paginated-book__content {
+  position: absolute;
+  top: 58px;
+  width: 236px;
+  left: 32px;
+  word-break: auto-phrase;
+  line-height: 18px;
+  margin: 0;
+  opacity: 0;
+  user-select: none;
+  z-index: -10;
+}
+
+.page-content p.paginated-book__content.--active {
+  opacity: 1;
+  user-select: auto;
+  z-index: 10;
+}

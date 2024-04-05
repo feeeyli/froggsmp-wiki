@@ -1,0 +1,246 @@
+.skins-carousel__slider {
+  height: 268px;
+  position: relative;
+  margin: 0 !important;
+  overflow-x: hidden;
+}
+
+.skins-carousel__slider li {
+  list-style-type: none;
+
+  height: 268px;
+  width: 201px;
+  position: absolute;
+  left: 50%;
+  margin-left: -100.5px;
+  border-radius: 2px;
+  transition: transform 1s, opacity 1s;
+}
+
+.skins-carousel__slider li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.skins-carousel__slider li:not(.slider__item--act) {
+  pointer-events: none;
+}
+
+.skins-carousel__slider .slider__item--prev {
+  transform: translateX(-140px) scale(.60);
+  opacity: .4;
+  z-index: 0;
+}
+
+.skins-carousel__slider .slider__item--next {
+  transform: translateX(140px) scale(.60);
+  opacity: .4;
+  z-index: 0;
+}
+
+.skins-carousel__slider .slider__item--pos-prev {
+  transform: translateX(-240px) scale(.45);
+}
+
+.skins-carousel__slider .slider__item--pos-next {
+  transform: translateX(240px) scale(.45);
+}
+
+.skins-carousel__slider .slider__item--pos-prev,
+.skins-carousel__slider .slider__item--pos-next {
+  opacity: 0;
+  transition: transform 1s, opacity 400ms;
+}
+
+.skins-carousel__slider .slider__item--act {
+  z-index: 10;
+}
+
+.skins-carousel__slider .slider__item--outside {
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+  transition: transform 0s, opacity 0s;
+}
+
+.skins-carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.skins-carousel .skins-carousel__prev-button {
+  --nav-button-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" /></svg>');
+  left: 0;
+}
+
+.skins-carousel .skins-carousel__next-button {
+  --nav-button-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /></svg>');
+  right: 0;
+}
+
+.skins-carousel .skins-carousel__nav-button:before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: block;
+  mask: var(--nav-button-icon) no-repeat center;
+  mask-size: contain;
+  background-color: var(--theme-page-text-color);
+}
+
+.skins-carousel .skins-carousel__nav-button {
+  position: absolute;
+  top: 134px;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transform: translateY(50%);
+  border-radius: 8px;
+  transition: background 150ms;
+}
+
+.skins-carousel .skins-carousel__nav-button:hover {
+  background: rgb(var(--theme-accent-color--rgb), 15%);
+}
+
+.skins-carousel__name-container {
+  padding: 0 16px;
+  background: var(--theme-accent-color);
+  border-radius: 4px;
+  font-family: Minecraftia;
+  text-align: center;
+  position: relative;
+  height: 36px;
+  overflow-y: hidden;
+  color: var(--theme-accent-label-color);
+}
+
+.skins-carousel__name {
+  transition: top 300ms, opacity 300ms;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  position: absolute;
+}
+
+.skins-carousel__name-container:empty,
+.skins-carousel__description-container:empty {
+  display: none;
+}
+
+.skins-carousel__name:not(.--active) {
+  opacity: 0;
+  user-select: none;
+  top: 100%;
+}
+
+.skins-carousel__description-container {
+  text-align: center;
+}
+
+.skins-carousel__description {
+  margin: 0 !important;
+}
+
+.skins-carousel__description:not(.--active) {
+  display: none;
+  user-select: none;
+}
+
+.mobile--skins-carousel {
+  position: relative;
+  width: 100%;
+  max-width: 426px;
+}
+
+.mobile--skins-carousel>pre {
+  white-space: nowrap;
+}
+
+.mobile--skins-carousel__info {
+  color: var(--theme-page-text-color);
+  font-size: 12px;
+  opacity: .5;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.mobile--skins-carousel__slider {
+  padding: 0;
+  margin: -36px 0 0 0 !important;
+  display: flex;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+}
+
+.mobile--skins-carousel__slider::-webkit-scrollbar {
+  height: 6px;
+}
+
+.mobile--skins-carousel__slider::-webkit-scrollbar-track {
+  background: var(--theme-page-background-color--secondary);
+}
+
+.mobile--skins-carousel__slider::-webkit-scrollbar-thumb {
+  background: var(--theme-link-color);
+}
+
+.mobile--skins-carousel__slider::-webkit-scrollbar-thumb:hover {
+  background: var(--theme-link-color--hover);
+}
+
+.mobile--skins-carousel__slider li {
+  flex-basis: 100%;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.mobile--skins-carousel__image {
+  margin-top: 1.125rem;
+}
+
+.mobile--skins-carousel__slider li img {
+  height: 268px;
+  width: 201px;
+}
+
+.mobile--skins-carousel__name-container {
+  padding: 0 16px;
+  background: var(--theme-accent-color);
+  border-radius: 4px;
+  height: 36px;
+}
+
+.mobile--skins-carousel__name {
+  font-family: Minecraftia;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile--skins-carousel__name:before {
+  width: max-content;
+  content: attr(data-content);
+  color: var(--theme-accent-label-color);
+}
+
+.mobile--skins-carousel__description {
+  text-align: center;
+}

@@ -1,0 +1,96 @@
+.hotbar {
+  background-image: url('https://i.imgur.com/yUq2sIS.png');
+  background-size: contain;
+  width: 364px;
+  height: 44px;
+  image-rendering: pixelated;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 2px;
+  /*margin-top: 42px;*/
+}
+
+.hotbar .hotbar__item {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+
+.hotbar .hotbar__item>pre {
+  margin: 0;
+  position: relative;
+  background: none;
+  border: none;
+  padding: 0;
+  overflow: unset;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.hotbar .hotbar__item>pre>a {
+  pointer-events: none;
+}
+
+.hotbar .hotbar__item>pre>a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -8px;
+  bottom: -8px;
+  left: -8px;
+  right: -8px;
+  background-image: url('https://i.imgur.com/YkH50Lz.png');
+  background-size: contain;
+  opacity: 0;
+}
+
+.hotbar .hotbar__item:hover>pre>a:before {
+  opacity: 1;
+}
+
+.hotbar .hotbar__item .hotbar__item--details {
+  content: var(--name);
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -100%);
+  opacity: 0;
+  background: #1b0c1b;
+  box-shadow: 0px 0px 0px 2px #2c0863, 0px 0px 0px 4px #1b0c1b;
+  color: #fff;
+  padding: 1px 12px;
+  transition: all 0.15s;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  min-height: 26px;
+  font-family: Minecraftia;
+  pointer-events: none;
+  flex-direction: column;
+  line-height: 24px;
+}
+
+.hotbar .hotbar__item .hotbar__item--details p {
+  font-size: 12px;
+  margin: 0;
+  color: #5454ff;
+  margin-top: -4px;
+  white-space: break-spaces;
+  max-width: 336px;
+  width: max-content;
+}
+
+.hotbar .hotbar__item.active:hover .hotbar__item--details {
+  opacity: 1;
+  top: -8px;
+}
+
+.hotbar .hotbar__item img {
+  image-rendering: pixelated;
+  width: 32px;
+  height: 32px;
+}
